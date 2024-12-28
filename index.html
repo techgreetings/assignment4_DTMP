@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment No 4</title>
+
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(#1c2833 ,#283747);
+            display: flex;
+            flex-direction: column;
+            /* justify-content: center;
+            align-items: center; */
+            margin: 0;
+        }
+        form{
+            background-color: #d7dbdd;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 50%;
+            max-width: 500px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            text-align: left;
+            margin-left: 500px;
+        }
+        label{
+            font-size: 16px;
+            display: block;
+            margin-bottom: 5px;
+            text-align: left;
+        }
+        label[for="termsAndCondition"], label[for="male"], label[for="female"]{
+            display: inline;
+            margin-bottom: 15px;
+        }
+        input[type="text"], input[type="email"], input[type="password"]{
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        input[type="radio"]{
+            margin-right: 5px;
+            font-size: 16px;
+        }
+        input[type="checkbox"]{
+            margin-right: 5px;
+        }
+        input[type="submit"] {
+            background-color: blue;
+            color: white;
+            font-size: 22px;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 5px;   
+            margin-top: 15px;  
+            }
+            
+            input[type="submit"]:hover {
+                background-color: darkblue;
+                color: white;
+                font-size: 22px;
+        }
+        table{
+            width: 50%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            margin-left: 10px;
+            background-color: #d7dbdd;
+            margin-bottom: 15px;
+        }
+        th, td{
+            border: 3px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+        h1, h2{
+            color: white;
+            margin-left: 10px;
+        }
+        div{
+            background-color: #d7dbdd;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            padding: 20px;
+            width: 50%;
+            /* max-width: 500px; */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            text-align: left;
+            margin-top: 10px;
+            margin-left: 10px;
+            font-size: 18px;
+        }
+        #idTesting{
+            color: blue;
+        }
+        .classTesting{
+            color: GREEN;
+        }
+        /* p{
+            color: white;
+            font-size: 18px;
+            /* line-height: 1.6; */
+        /* }  */
+    </style>
+</head>
+<body>
+    <h1>Assignment No 4</h1>
+    <h2>Task 1: Form Creation</h2>
+    <form action="">
+        <label for="firstName">First Name</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        <br>
+        <label for="lastName">Last Name</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name">
+        <br>
+        <label for="contactNumber">Contact Number</label>
+        <input type="text" id="contactNumber" name="contactNumber" placeholder="Contact Number" required>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Password" required>
+        <br>
+        <label for="Gender:">Gender</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required>
+        <label for="female">Female</label>
+        <br>
+        <label for="termsAndCondition">I agree to the terms and condition</label>
+        <input type="checkbox" id="termsAndCondition" name="termsAndCondition" required>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+    <h2 style="color: white;">Task 2: Table Creation</h2>
+    <h2 style="color:white;">Student Information Table</h2>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Father's Name</th>
+            <th>Class</th>
+            <th>Roll Number</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Aslam</td>
+            <td>10th</td>
+            <td>123</td>
+        </tr>
+        <tr>
+            <td>Asad</td>
+            <td>Ahmed</td>
+            <td>9th</td>
+            <td>124</td>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>Aslam</td>
+            <td>10th</td>
+            <td>123</td>
+        </tr>
+        <tr>
+            <td>Asad</td>
+            <td>Ahmed</td>
+            <td>9th</td>
+            <td>124</td>
+        </tr>
+    </table>
+    <h2>Task 3: CSS Selectors</h2>
+    <div>
+    <p >CSS Selectors are patterns used to select elements on a web page for styling. There are several types of selectors:</p>
+    <p id="idTesting"><strong>ID Selector:</strong> Selects an element based on its ID attribute. IDs are unique within a page, so the ID selector is used to style a single, unique element.</p>
+    <p class="classTesting"><strong>Class Selector:</strong> Selects elements based on their class attribute. Classes can be used on multiple elements, making the class selector useful for styling groups of elements.</p>
+    <p class="classTesting"><strong>Class Selector:</strong> Selects elements based on their class attribute. Classes can be used on multiple elements, making the class selector useful for styling groups of elements.</p>
+    <p class="classTesting"><strong>Class Selector:</strong> Selects elements based on their class attribute. Classes can be used on multiple elements, making the class selector useful for styling groups of elements.</p>
+    <p><strong>Difference:</strong> The ID selector is used for a single, unique element, while the class selector can be used for multiple elements. IDs are more specific than classes and should be used sparingly to avoid conflicts.</p>
+</div>
+<h2>CSS Box model</h2>
+<div>
+    <p>The CSS box model is a design and layout concept used in web development. It consists of:</p>
+    <ul>
+        <li>Content: The actual content of the box, such as text or images.</li>
+        <li>Padding: The space between the content and the border .</li>
+        <li>Border: The border surrounding the padding and content.</li>
+        <li>Margin: The space between the border and other elements on the page.</li>
+    </ul>
+    <p>The box model is used to control the layout and spacing of elements on a web page. By adjusting the padding, border, and margin properties, developers can create visually appealing and well-organized layouts.</p>
+</div>
+<footer>
+    <p style="color: white; text-align: center;">&copy; 2021 Assignment No 4</p>
+</footer>
+</body>
+</html>
